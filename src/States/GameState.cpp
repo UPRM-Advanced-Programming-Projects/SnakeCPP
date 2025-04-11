@@ -49,6 +49,10 @@ void GameState::draw() {
 //--------------------------------------------------------------
 void GameState::keyPressed(int key) {
 
+    if(key == 'e' || key == 'E'){
+        foodSpawned = false;
+    }
+    
     if(key != OF_KEY_LEFT && key != OF_KEY_RIGHT && key != OF_KEY_UP && key != OF_KEY_DOWN) { return; }
 
     switch(key) {
